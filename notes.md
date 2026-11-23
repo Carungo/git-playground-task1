@@ -1,8 +1,8 @@
 ## Prediction
-I added a `MAX_NOTES: 100` setting to `lib/config.js` to limit the maximum number of stored notes.
+I renamed the session timeout variable and added a short `getTimeoutMs` helper function in `lib/config.js`.
 
 ## Claude's Summary of Changes
-- **`lib/config.js`**: Added a new `MAX_NOTES: 100` configuration property to `module.exports`.
+- **`lib/config.js`**: Renamed the timeout constant to `DEFAULT_SESSION_TIMEOUT_MINUTES`, added `MAX_NOTES: 100`, and added a short `getTimeoutMs()` helper function.
 - **`notes.js` (Flagged as unintended)**: Spotted a stray comment (`// stray debug note`) added at the bottom of `notes.js` that appears unrelated to the configuration update.
 
 ## Reflection
